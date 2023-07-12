@@ -164,3 +164,16 @@
     }
   }  
 }
+
+@include media-breakpoint-down(md) { 
+  .index-list {
+    a{
+      padding: 18px 36px;
+    }
+    li:last-child a {
+      padding: 18px 32px;
+      background-color: black;
+    }
+
+  }
+ }

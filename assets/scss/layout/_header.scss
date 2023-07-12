@@ -24,3 +24,36 @@ header{
     }
   }
 }
+
+.header-hamberger{
+  display: none;
+  span{
+    height: 54px;
+    font-size: 30px;
+  }
+}
+
+.header-hamberger-list{
+  max-height: 0;
+  overflow: hidden;
+  transition: .5s;
+  a{
+    font-size: 32px;
+  }
+}
+
+@include media-breakpoint-down(lg){
+  h1 span:last-child{
+    display: none;
+  }
+  .header-hamberger{
+    display: block;
+  }
+  .input input{
+    margin-left: 25px !important;
+    max-width: 207px;
+  }
+  .right{
+    display: none !important;
+  }
+}
